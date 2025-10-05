@@ -20,4 +20,5 @@ numberOfYears = int(input("Enter the number of years: "))
 weeklyInterestRate = (annualInterestRate / 100) / 52
 
 #--Amortization formula---
-weeklyPayment = weeklyInterestRate / (1 - (1 + weeklyInterestRate)** (-52 * numberOfYears))
+weeklyPayment = (weeklyInterestRate / (1 - (1 + weeklyInterestRate)** (-52 * numberOfYears))) * amountOfLoan
+print(weeklyPayment)
