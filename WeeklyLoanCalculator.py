@@ -11,5 +11,8 @@
 
 #---Output-----
 
-
+#--Inputs---------#
+amountOfLoan = float(input("Enter the amount of loan: "))
+annualInterestRate = float(input("Enter the interest rate: "))
+numberOfYears = int(input("Enter the number of years: "))
 
