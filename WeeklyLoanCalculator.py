@@ -21,4 +21,14 @@ weeklyInterestRate = (annualInterestRate / 100) / 52
 
 #--Amortization formula---
 weeklyPayment = (weeklyInterestRate / (1 - (1 + weeklyInterestRate)** (-52 * numberOfYears))) * amountOfLoan
-print(weeklyPayment)
+
+#-----Output-------#
+print()
+print("Weekly Loan Calculator")
+print()
+print("Enter the amount of loan: {0}".format(int(amountOfLoan)))
+print("Enter the interest rate (%): {0}".format(annualInterestRate))
+print("Enter the number of years: {0}".format(numberOfYears))
+print()
+print("Your weekly payment will be: {0:.2f}".format(weeklyPayment))
+print()
